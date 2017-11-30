@@ -1,0 +1,113 @@
+section.header
+	border 1px solid transparent
+	background hederColor
+	
+.header-container
+	width 100%
+	max-width 885px
+	margin 47px 330px 193px 85px
+	display flex
+	justify-content space-between
+	flex-wrap wrap
+
+/*sandwich-menu*/
+
+.sandwich-menu
+	position relative
+	display block
+	width 55px
+	height 33px
+	cursor pointer
+
+	& span
+		position absolute
+		display block
+		width 100%
+		height 5px
+		background-color sandwichColor
+		transition all 0.5s
+		
+	& span:last-child
+		margin-bottom 0
+		
+	.sandwich-menu-top
+		top 0px
+		left 0px
+	.sandwich-menu-middle
+		top 13px
+		left 0px
+	.sandwich-menu-bottom
+		top 26px
+		left 0px
+
+	&.active
+		position absolute
+		top 3px
+		left -267px
+		.sandwich-menu-top
+			width 50%
+			height 3px
+			opacity 0
+		.sandwich-menu-middle
+			width 50%
+			height 3px
+			top 16px
+			left 6px
+			transform rotate(44deg)
+		.sandwich-menu-bottom
+			width 50%
+			height 3px
+			top 16px
+			left 6px
+			transform rotate(-45deg)
+
+/*sandwich-menu end*/
+
+.main-title
+	width 328px
+	margin-top 148px
+	text-align center
+	color #fff
+	font-family mainFont
+	
+	h1
+		margin-bottom 38px
+		font-size rem(48)
+		
+	h1:before
+		content ''
+		display block
+		height 2px
+		margin-bottom 16px
+		background-color sandwichColor
+	
+	h1:after
+		content ''
+		display block
+		top 279px
+		height 2px
+		margin-top 16px
+		background-color sandwichColor
+	
+.main-title-description
+	margin-bottom 47px
+		
+	span:first-child
+		display inline-block
+		padding-right 14px
+		border-right 1px solid #fff
+		font-size rem(18)
+		
+	span:last-child
+		display inline-block
+		padding-left 14px
+		font-size rem(18)
+
+.btn-header
+	display inline-block
+	padding 16px 44px
+	border-radius 3px
+	background-color battonHederColor
+	color #fff
+	font-size rem(22)
+	cursor pointer

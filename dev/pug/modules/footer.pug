@@ -1,0 +1,37 @@
+section.footer
+	.footer-container#contacts
+		.massage-box
+			.massage-box-title Leave a Message
+			form(action='', name='form1', method='get').massage-form
+				.inputs
+					input(type='text', name='name', placeholder='Name*')
+					input(type='text', name='email', placeholder='Email*')
+					input(type='text', name='subject', placeholder='Subject*')
+				.textarea
+					textarea(name='message', placeholder='Message*')
+					input(type='submit', name='subject', value='Hire Me!')
+		.contacts-box
+			.location
+				.location-title Location
+				.location-icon
+				.location-desc 324 Golden Tower,Amborkhana Sylhet
+			.mail
+				.mail-title Email
+				.mail-icon
+				.mail-desc junaed@deviserweb.com
+			.call
+				.call-title Call
+				.call-icon
+				.call-desc 0800 234 6578
+	.footer-container-bottom
+		ul.social-icon
+			li
+				a(href="https://twitter.com/")
+						+icon('twitter')
+			li
+				a(href="https://www.skype.com/")
+						+icon('skype')
+			li
+				a(href="https://www.dribbble.com/")
+						+icon('dribbble')
+		.copyright Copyright: Junaed Ahmed, All rights reserved
